@@ -23,3 +23,8 @@ class Cols:
                     self.y.append(col)
                 else:
                     self.x.append(col)
+
+    def add(self, row):
+        for t in [self.x, self.y]:
+            for col in t:
+                col.add(row.cells[col.at])
