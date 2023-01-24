@@ -3,7 +3,9 @@ from collections import defaultdict
 
 
 class Sym:
-    def __init__(self):
+    def __init__(self, at=0, txt=""):
+        self.at = at
+        self.txt = txt
         self.n = 0
         self.has = defaultdict(int)
         self.most = 0
@@ -29,3 +31,6 @@ class Sym:
             e += fun(n / self.n)
 
         return -e
+
+    def rnd(self, x):
+        return x
