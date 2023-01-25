@@ -1,4 +1,4 @@
-from Utils import csv,map
+from Utils import csv,map,kap
 from Row import Row
 from Cols import Cols
 class Data:
@@ -18,6 +18,25 @@ class Data:
 				t = Row(t)
 				self.cols.add(t)
 				self.rows.append(t)
+	
+	def clone(self,t,data):
+		data=Data(list(self.cols.names))
+		map(t,self.add)
+		return data
+	
+	def stats(self,cols,nPlaces,what='mid'):
+		def fun(k,col):
+			return col.rnd(getattr(col,what)(),nPlaces),col.txt
+		return kap(cols,fun)
+			
+
+			
+
+
+
+
+
+
 
 	
 

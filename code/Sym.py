@@ -32,5 +32,5 @@ class Sym:
 
         return -e
 
-    def rnd(self, x):
+    def rnd(self, x,n):
         return x

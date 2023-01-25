@@ -53,4 +53,13 @@ def eg_data(the):
             data.cols.y[0].w == -1 and \
             data.cols.x[0].at == 0 and \
             len(data.cols.x)==4
+
+
+def eg_stats(the):
+    data=Data(the['file'])
+    temp={}
+    temp.update({"y":data.cols.y,"x":data.cols.x})
+    for k,cols in temp.items():
+        print(k,"mid",data.stats(cols,2,"mid"))
+        print("", "div",data.stats(cols,2,"div"))
     
