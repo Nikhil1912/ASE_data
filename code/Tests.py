@@ -3,8 +3,12 @@ import sys
 import TestEngine
 from Sym import Sym
 from Num import Num
-from Utils import rnd
-
+from Data import Data
+from Utils import rnd,csv,rand
+tot=0
+def count(t):
+    global tot
+    tot = tot + len(t)
 
 def eg_check_syms(the):
     sym = Sym()
@@ -38,4 +42,15 @@ def eg_check_rands(the):
     m1=rnd(num1.mid(),10)
     m2=rnd(num2.mid(),10)
     assert m1==m2 and .5==rnd(m1,1)
+
+def eg_csv(the):
+    csv(the['file'],count)
+    assert tot == 8*399
+
+def eg_data(the):
+    data = Data(the['file'])
+    assert len(data.rows) == 398 and \
+            data.cols.y[0].w == -1 and \
+            data.cols.x[0].at == 0 and \
+            len(data.cols.x)==4
     

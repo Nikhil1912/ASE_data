@@ -1,0 +1,6 @@
+✅PASS : eg_check_nums
+✅PASS : eg_check_rands
+✅PASS : eg_check_syms
+✅PASS : eg_csv
+✅PASS : eg_data
+✅PASS : eg_the

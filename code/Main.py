@@ -1,12 +1,11 @@
 """
 data.lua : an example csv reader script
-(c)2022, Tim Menzies <timm@ieee.org>, BSD-2 
-USAGE:   data.lua  [OPTIONS] [-g ACTION]
+
 OPTIONS:
-  -d  --dump  on crash, dump stack = false
+  -d  --dump  on crash, dump stack = False
   -f  --file  name of file         = ../etc/data/auto93.csv
   -g  --go    start-up action      = data
-  -h  --help  show help            = false
+  -h  --help  show help            = False
   -s  --seed  random number seed   = 937162211
 ACTIONS:
 """

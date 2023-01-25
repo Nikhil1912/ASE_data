@@ -1,5 +1,6 @@
 import math
-
+from Main import coerce
+import os
 
 def rnd(n, nPlaces=3):
     mult = pow(10, nPlaces)
@@ -12,4 +13,21 @@ def rand(lo=0,hi=1,Seed=937162211):
 
 def rint(lo,hi):
     return math.floor(0.5 + rand(lo,hi))
+
+def csv(src,fun):
+    if not os.path.isfile(src):
+        print("\nfile "+src+" doesn't exists!")
+        sys.exit(2)
+    with open(src, 'r') as file1:
+        for line in file1:
+            temp=[]
+            for j in line.strip().split(','):
+                temp.append(coerce(j))
+            fun(temp)
+
+def map(src,fun):
+    for i in src:
+        fun(i)
+
+
 

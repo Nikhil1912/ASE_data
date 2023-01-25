@@ -17,9 +17,9 @@ class Cols:
                 col = Sym(n, s)
             self.all.append(col)
             if s[-1] != 'X':
-                if s[-1] == '!':
+                if '!' in s:
                     self.klass = col
-                if s[-1] in ['+', '-']:
+                if s[-1] in ['+', '-','!']:
                     self.y.append(col)
                 else:
                     self.x.append(col)

@@ -9,7 +9,7 @@ class Num:
         self.n = self.mu = self.m2 = 0
         self.lo = math.inf
         self.hi = -math.inf
-        self.w = -1 if txt[-1] == '-' else 1
+        self.w = -1 if '-' in self.txt else 1
 
     def add(self, n):
         if n != '?':
