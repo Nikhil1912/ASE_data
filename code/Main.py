@@ -1,13 +1,14 @@
 """
-script.py - an example script with help text and a test suite
-
-usage: python3 main.py [options]
-
+data.lua : an example csv reader script
+(c)2022, Tim Menzies <timm@ieee.org>, BSD-2 
+USAGE:   data.lua  [OPTIONS] [-g ACTION]
 OPTIONS:
-  -d  --dump  on crash, dump stack = False
+  -d  --dump  on crash, dump stack = false
+  -f  --file  name of file         = ../etc/data/auto93.csv
   -g  --go    start-up action      = data
-  -h  --help  show help            = False
+  -h  --help  show help            = false
   -s  --seed  random number seed   = 937162211
+ACTIONS:
 """
 import re, sys, getopt
 import TestEngine
@@ -65,5 +66,4 @@ if __name__ == "__main__":
     if the['help']:
         print(__doc__)
         sys.exit(2)
-    print(the)
     TestEngine.run(the)
