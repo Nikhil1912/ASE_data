@@ -30,6 +30,7 @@ def map(src,fun):
         fun(i)
 
 def kap(t,fun, u={}):
+    u={}
     for k,v in enumerate(t):
         v,k=fun(k,v)
         if not k:

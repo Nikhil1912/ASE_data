@@ -28,18 +28,3 @@ class Data:
 		def fun(k,col):
 			return col.rnd(getattr(col,what)(),nPlaces),col.txt
 		return kap(cols,fun)
-			
-
-			
-
-
-
-
-
-
-
-	
-
-
-
-
