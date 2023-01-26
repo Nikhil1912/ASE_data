@@ -7,10 +7,11 @@ Classes
 `Cols(t)`
 :   Factory for creating NUMs and SYMs
 
-    ### Methods
+### Methods
 
-    `add(self, row)`
-    :Module Data
+`add(self, row)`
+
+Module Data
 ===========
 
 Classes
@@ -19,16 +20,17 @@ Classes
 `Data(src={})`
 :   Container for ROWs, summarized into NUM or SYM columns
 
-    ### Methods
+### Methods
 
-    `add(self, t)`
-    :   Adds rows and columns
+`add(self, t)`
+:   Adds rows and columns
 
-    `clone(self, t, data)`
-    :   Creates clone
+`clone(self, t, data)`
+:   Creates clone
 
-    `stats(self, cols, nPlaces, what='mid')`
-    :Module Num
+`stats(self, cols, nPlaces, what='mid')`
+
+Module Num
 ==========
 
 Classes
@@ -37,26 +39,29 @@ Classes
 `Num(at=0, txt='')`
 :   Summarize stream of numbers
 
-    ### Methods
+### Methods
 
-    `add(self, n)`
-    :
+`add(self, n)`
+:
 
-    `div(self)`
-    :   Return standard deviation
+`div(self)`
+:   Return standard deviation
 
-    `mid(self)`
-    :   Returns mean
+`mid(self)`
+:   Returns mean
 
-    `rnd(self, x, n)`
-    :Module Row
+`rnd(self, x, n)`
+
+Module Row
 ==========
 
 Classes
 -------
 
 `Row(t)`
-:   Container for one recordModule Sym
+:   Container for one record
+
+Module Sym
 ==========
 
 Classes
@@ -65,19 +70,20 @@ Classes
 `Sym(at=0, txt='')`
 :   Summarize stream of symbols
 
-    ### Methods
+### Methods
 
-    `add(self, x)`
-    :
+`add(self, x)`
+:
 
-    `div(self)`
-    :   Returns entropy
+`div(self)`
+:   Returns entropy
 
-    `mid(self)`
-    :   Returns mode
+`mid(self)`
+:   Returns mode
 
-    `rnd(self, x, n)`
-    :Module Tests
+`rnd(self, x, n)`
+
+Module Tests
 ============
 
 Functions
