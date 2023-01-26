@@ -1,5 +1,8 @@
 # ASE_data
 [![Unit tests](https://github.com/Nikhil1912/ASE_data/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/Nikhil1912/ASE_data/actions/workflows/unit-tests.yml)
+[![DOI](https://zenodo.org/badge/592577048.svg)](https://zenodo.org/badge/latestdoi/592577048)
+
+
 
 
 
