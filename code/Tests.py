@@ -69,3 +69,4 @@ def eg_stats(the):
     for k, cols in temp.items():
         print(k, "mid", data.stats(cols, 2, "mid"))
         print("", "div", data.stats(cols, 2, "div"))
+

@@ -8,7 +8,7 @@ tests = [t for t in getmembers(Tests) if isfunction(t[1]) and t[0].startswith("e
 
 def run(the):
     fails = 0
-    file = open('../etc/out.txt','w')
+    file = open('../etc/out.txt', 'w')
     for test in tests:
         t_name, t_func = test
         try:
@@ -22,4 +22,3 @@ def run(the):
     file.close()
 
     return fails
-
