@@ -26,6 +26,7 @@ OPTIONS:
 To run
 
 python code/Main.py --seed 937162211
+python code/Main.py --file etc/data/auto93.csv
 
 ```
 
