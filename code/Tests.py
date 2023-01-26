@@ -15,6 +15,7 @@ def count(t):
 
 
 def eg_check_syms(the):
+    """Tests Sym"""
     sym = Sym()
     for x in ["a", "a", "a", "a", "b", "b", "c"]:
         sym.add(x)
@@ -22,6 +23,7 @@ def eg_check_syms(the):
 
 
 def eg_check_nums(the):
+    """Tests Num"""
     num = Num()
     for x in [1, 1, 1, 1, 2, 2, 3]:
         num.add(x)
@@ -55,6 +57,7 @@ def eg_csv(the):
 
 
 def eg_data(the):
+    """Tests Data"""
     data = Data(the['file'])
     assert len(data.rows) == 398 and \
            data.cols.y[0].w == -1 and \

@@ -3,6 +3,7 @@ from Utils import rnd
 
 
 class Num:
+    """Summarize stream of numbers"""
     def __init__(self, at=0, txt=""):
         self.at = at
         self.txt = txt
@@ -21,9 +22,11 @@ class Num:
             self.hi = max(n, self.hi)
 
     def mid(self):
+        """Returns mean"""
         return self.mu
 
     def div(self):
+        """Return standard deviation"""
         return 0 if self.m2 < 0 or self.n < 2 else pow(self.m2/(self.n - 1), 0.5)
 
     def rnd(self, x, n):

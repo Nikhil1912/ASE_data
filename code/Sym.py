@@ -3,6 +3,7 @@ from collections import defaultdict
 
 
 class Sym:
+    """Summarize stream of symbols"""
     def __init__(self, at=0, txt=""):
         self.at = at
         self.txt = txt
@@ -19,10 +20,11 @@ class Sym:
                 self.most, self.mode = self.has[x], x
 
     def mid(self):
+        """Returns mode"""
         return self.mode
 
     def div(self):
-
+        """Returns entropy"""
         def fun(p):
             return p * math.log(p, 2)
 

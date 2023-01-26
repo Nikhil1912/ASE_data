@@ -4,6 +4,7 @@ from Num import Num
 
 
 class Cols:
+    """Factory for creating NUMs and SYMs"""
     def __init__(self, t):
         self.names = t
         self.all = []

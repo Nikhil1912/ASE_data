@@ -4,6 +4,7 @@ from Cols import Cols
 
 
 class Data:
+    """Container for ROWs, summarized into NUM or SYM columns"""
     def __init__(self, src={}):
         self.rows = list()
         self.cols = None
@@ -13,6 +14,7 @@ class Data:
             map(src, self.add)
 
     def add(self, t):
+        """Adds rows and columns"""
         if not self.cols:
             self.cols = Cols(t)
         else:
@@ -22,6 +24,7 @@ class Data:
                 self.rows.append(t)
 
     def clone(self, t, data):
+        """Creates clone"""
         data = Data(list(self.cols.names))
         map(t, self.add)
         return data
