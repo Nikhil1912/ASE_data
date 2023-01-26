@@ -9,7 +9,10 @@ OPTIONS:
   -s  --seed  random number seed   = 937162211
 ACTIONS:
 """
-import re, sys, getopt
+import getopt
+import re
+import sys
+
 import TestEngine
 
 
@@ -65,4 +68,4 @@ if __name__ == "__main__":
     if the['help']:
         print(__doc__)
         sys.exit(2)
-    TestEngine.run(the)
+    sys.exit(TestEngine.run(the))
